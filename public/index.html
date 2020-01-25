@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Flower Catalog</title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+      const hideMug = () => {
+        const mug = document.querySelector('#mug');
+        mug.classList.add('hide');
+        setTimeout(() => {mug.classList.remove('hide')}, 1000);
+      };
+    </script>
+
   </head>
   <body>
     <h1 class="header">Flower Catalog</h1>
@@ -16,7 +24,12 @@
           <li><a href="abeliophyllum.html">Abeliophyllum</a></li>
           <li><a href="ageratum.html">Ageratum</a></li>
         </ul>
-        <img src="images/animated-flower-image-0021.gif" alt="mug" /><br />
+        <img
+          id="mug"
+          src="images/animated-flower-image-0021.gif"
+          alt="mug"
+          onclick="hideMug()"
+        /><br />
         <a href="guest.html">Guest Book</a>
       </div>
     </div>
