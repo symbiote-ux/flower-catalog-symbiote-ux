@@ -1,0 +1,133 @@
+-----------Flower Catalog Website-----------
+
+
+# GuideLines to follow in this project
+
+* Showcase the project to the client mostly after every story,
+   Showcase it between if it is needed.
+* stick to the given contract
+* give suggestion for the Customization , if client agreed add the feature.   
+
+
+# SetUp Environment 
+=> Make a git repo named as FlowerCatalog
+=> Directories tree :
+  FlowerCatalog(root)
+   |__ public
+   |       |__images
+   |       |__js
+   |       |__htmlFiles
+  server.js 
+
+
+# Story1: FlowerCatalog Website HomePage----------------------------------------------------------------------------------1
+ 
+$Requirements:
+    *This is the landing page of the website.
+    *Title “Flower Catalog” at the top.
+    *Image of flowers
+    *Links to pages of Abeliophyllum, Ageratum and a guest book.
+    *A watering Jar image, which when clicked will hide for a second
+
+todo:
+* make a heading
+* add the image 
+* add links 
+* add jar image
+* add its feature according to the Requirements
+
+====================== Customization(if client agreed)============
+* add Styling to page:
+-Customize color theme
+-add a background color
+-add box borders
+-change font size
+-fix the layout of the page
+-on hover link color should changed
+
+
+# Story2: Create Abeliophyllum flower page--------------------------------------------------------------------------------2
+
+$ Requirements:
+     * This is the page for Abeliophyllum.
+     * Image on left
+     * Centered title at top
+     * A link to go back to home page
+     * Formatted Content on the right of the image with information on the flower.
+     * A link to download the content as pdf.
+ 
+ todo:
+ * make the heading
+ * add image
+ * add content of the page
+ * add link to download the content as book
+ * add a link to go to home page 
+
+====================== Customization(if client agreed)============
+-common to home page Customization
+
+# Story3: Create Ageratum Flower page--------------------------------------------------------------------------------------3
+
+$ Requirements:
+     * This is the page for Ageratum.
+     * Image on left
+     * Centered title at top
+     * A link to go back to home page
+     * Formatted Content on the right of the image with information on the flower.
+     * A link to download the content as pdf.
+
+
+todo:
+* make the heading
+ * add image
+ * add content of the page
+ * add link to download the content as book
+ * add a link to go to home page 
+
+====================== Customization(if client agreed)============
+ -common to home page Customization
+
+ 
+# Story4: Create Guest Page ----------------------------------------------------------------------------------------------4
+
+$ Requirements:
+     * This is the page for Guest book.
+     * Centered title at top
+     * A link to go back to home page
+     * Text fields to take name & a comment.
+     * Submit button, which takes the comment
+     * A list of comments by different guest until now with Date-time, 
+        Name and Comment of each ordered with latest comment in reverse chronological order.	
+
+
+todo:
+* make heading as 'Guest Book'
+* add forms to take input of name and comments 
+* add a button to save the data of the comment.
+* add a link to go to home page 
+* List the comments in last in first order
+* ....fields to be added according to further planning
+
+====================== Customization(if client agreed)============
+ -common to home page Customization
+
+
+# Story5: Link all the files-----------------------------------------------------------------------------------------------5
+
+todo:
+*link all required files.
+*try with python3 server to host the website : to check the functionality of the site.
+* review the code : that includes html and css
+
+# Story6: Create a server --------------------------------------------------------------------------------------------------6
+
+$ Requirements:
+*Should host the site
+*Should serve the home page on '/'
+*Should serve the static file according to the requested url
+
+todo:
+* reuse the previously written server 
+* Customize according to the given Requirements
+* host the site using server
+* check the functionality
