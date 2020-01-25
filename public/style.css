@@ -2,33 +2,59 @@ body {
   padding: 2% 8% 0%;
 }
 
-#header {
-  text-align: end;
-  padding: 15px 230px 15px 0px;
+.header,
+.centerHeader {
   color: rgba(255, 165, 0, 0.7);
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   margin: 0px;
   text-shadow: 2px 2px 4px rgba(255, 165, 0, 0.4);
 }
 
-#image {
-  border: 2px solid rgba(0, 0, 0, 0.3);
-  margin: 5px 0px;
-  height: 650px;
-  width: 900px;
-  opacity: 0.94;
-  background-image: url('./images/freshorigins.jpg');
+.header {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: end;
+  padding: 15px 230px 15px 0px;
 }
 
-#image:hover {
+.centerHeader {
+  text-align: center;
+}
+
+.imageH,
+.image {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  margin: 10px 0px;
+  opacity: 0.94;
+}
+
+.imageH {
+  height: 650px;
+  width: 900px;
+  background-image: url('images/freshorigins.jpg');
+}
+
+.image {
+  height: 640px;
+  width: 500px;
+  background-image: url('images/pbase-Abeliophyllum.jpg');
+}
+
+.imageH:hover,
+.image:hover {
   box-shadow: 1px 1px 4px 0.5px rgba(0, 0, 0, 0.3);
   opacity: 1;
 }
 
-#page {
+.page {
   display: flex;
   justify-content: left;
+}
+
+.details {
+  height: 600px;
+  width: 630px;
+  margin-top: 350px;
+  padding-left: 10px;
 }
 
 #content {

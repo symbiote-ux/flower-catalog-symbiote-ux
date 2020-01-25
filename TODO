@@ -9,7 +9,7 @@
 * give suggestion for the Customization , if client agreed add the feature.   
 
 
-# SetUp Environment ✅
+ ✅# SetUp Environment 
 => Make a git repo named as FlowerCatalog 
 => Directories tree :
   FlowerCatalog(root)
@@ -20,7 +20,7 @@
   server.js 
 
 
-# Story1: FlowerCatalog Website HomePage----------------------------------------------------------------------------------1
+ ✅# Story1: FlowerCatalog Website HomePage----------------------------------------------------------------------------------1
  
 $Requirements:
     *This is the landing page of the website.
