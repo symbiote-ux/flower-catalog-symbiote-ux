@@ -112,14 +112,14 @@ todo:
  -common to home page Customization
 
 
-# Story5: Link all the files-----------------------------------------------------------------------------------------------5
+✅# Story5: Link all the files-----------------------------------------------------------------------------------------------5
 
 todo:
 *link all required files.
 *try with python3 server to host the website : to check the functionality of the site.
 * review the code : that includes html and css
 
-# Story6: Create a server --------------------------------------------------------------------------------------------------6
+✅# Story6: Create a server --------------------------------------------------------------------------------------------------6
 
 $ Requirements:
 *Should host the site

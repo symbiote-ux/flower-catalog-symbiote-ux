@@ -10,15 +10,16 @@
       const hideMug = () => {
         const mug = document.querySelector('#mug');
         mug.classList.add('hide');
-        setTimeout(() => {mug.classList.remove('hide')}, 1000);
+        setTimeout(() => {
+          mug.classList.remove('hide');
+        }, 1000);
       };
     </script>
-
   </head>
   <body>
     <h1 class="header">Flower Catalog</h1>
     <div class="page">
-      <div class="imageH"></div>
+      <div><img src="images/freshorigins.jpg" alt="freshorigins" /></div>
       <div id="content">
         <ul>
           <li><a href="abeliophyllum.html">Abeliophyllum</a></li>
@@ -30,7 +31,7 @@
           alt="mug"
           onclick="hideMug()"
         /><br />
-        <a href="guest.html">Guest Book</a>
+        <a href="guestBook.html">Guest Book</a>
       </div>
     </div>
   </body>
