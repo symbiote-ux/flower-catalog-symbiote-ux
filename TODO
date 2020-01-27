@@ -88,7 +88,7 @@ todo:
  -common to home page Customization
 
  
-# Story4: Create Guest Page ----------------------------------------------------------------------------------------------4
+✅# Story4: Create Guest Page ----------------------------------------------------------------------------------------------4
 
 $ Requirements:
      * This is the page for Guest book.
@@ -131,3 +131,8 @@ todo:
 * Customize according to the given Requirements
 * host the site using server
 * check the functionality
+
+✅-----Refactoring------------------------------------------------
+todo:
+* Refactor the app.js
+  #extract the serving pages into templates.
