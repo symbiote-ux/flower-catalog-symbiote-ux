@@ -12,18 +12,19 @@
       </h1>
     </div>
     <h2>Leave a comment</h2>
-    <form action="guest.html" method="POST">
-      Name:<input type="text" name="guestName" /><br />
-      Comment:<textarea name="commentMsg" id="guest" cols="30" rows="5"></textarea><br />
+    <form action="guestBookPost.html" method="POST">
+      Name:<input type="text" name="name" /><br />
+      Comment:<textarea name="comment" id="guest" cols="30" rows="5"></textarea><br />
       <input type="submit" value="Submit" class="button" />
     </form>
     <hr />
     <table id="comments" cellspacing="10">
       <tr>
         <th>Name</th>
-        <th>Date_Time</th>
         <th>Comment</th>
+        <th>Time</th>
       </tr>
+      __comments__
     </table>
   </body>
 </html>
