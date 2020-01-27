@@ -1,5 +1,4 @@
 const {Server} = require('net');
-const Request = require('./lib/request');
 const {processRequest} = require('./app');
 
 const handleConnection = socket => {
@@ -9,12 +8,7 @@ const handleConnection = socket => {
   socket.on('close', hadError => console.warn(`${remote} closed ${hadError ? 'with error' : ''}`));
   socket.on('end', () => console.warn(`${remote} ended`));
   socket.on('error', err => console.warn('socket error', err));
-  socket.on('data', text => {
-    console.warn(`${remote} data:\n`);
-    const req = Request.parse(text);
-    const res = processRequest(req);
-    res.writeTo(socket);
-  });
+  socket.on('data', text => processRequest(text, socket));
 };
 
 const main = () => {

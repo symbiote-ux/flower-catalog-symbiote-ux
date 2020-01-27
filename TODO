@@ -4,9 +4,9 @@
 # GuideLines to follow in this project
 
 * Showcase the project to the client mostly after every story,
-   Showcase it between if it is needed.
+   Showcase it between , it is needed.
 * stick to the given contract
-* give suggestion for the Customization , if client agreed add the feature.   
+* give suggestion for the Customization , on client agreement add the feature.   
 
 
  ✅# SetUp Environment 
@@ -36,7 +36,7 @@ todo:
 * add jar image
 * add its feature according to the Requirements
 
-====================== Customization(if client agrees)============
+====================== Customization(on client agreement)============
 * add Styling to page:
 -Customize color theme
 -add a background color
@@ -63,7 +63,7 @@ $ Requirements:
  * add link to download the content as book
  * add a link to go to home page 
 
-====================== Customization(if client agrees)============
+====================== Customization(on client agreement)============
 -common to home page Customization
 
 ✅# Story3: Create Ageratum Flower page--------------------------------------------------------------------------------------3
@@ -84,7 +84,7 @@ todo:
  * add link to download the content as book
  * add a link to go to home page 
 
-====================== Customization(if client agrees)============
+====================== Customization(on client agreement)============
  -common to home page Customization
 
  
@@ -108,7 +108,7 @@ todo:
 * List the comments in last in first order
 * ....fields to be added according to further planning
 
-====================== Customization(if client agreed)============
+====================== Customization(on client agreement)============
  -common to home page Customization
 
 
