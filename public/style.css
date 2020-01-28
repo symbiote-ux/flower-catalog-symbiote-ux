@@ -44,3 +44,19 @@
   font-size: 15px;
   border-radius: 8%;
 }
+
+table,
+th,
+td {
+  border: 5px solid white;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.02);
+  word-wrap: break-word;
+  box-shadow: -2px -2px 5px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
