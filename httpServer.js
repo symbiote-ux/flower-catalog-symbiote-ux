@@ -1,4 +1,4 @@
-const Request = require('./lib/request');
+const {Server} = require('http');
 const {serveGuestBook, serveGuestBookPost} = require('./lib/serveGuestBookPages');
 const {serveStaticFile} = require('./lib/serveStaticFile');
 
@@ -8,11 +8,14 @@ const findHandler = req => {
   return serveStaticFile;
 };
 
-const processRequest = (text, socket) => {
-  const req = Request.parse(text);
+const handleConnection = (req, res) => {
   const handler = findHandler(req);
-  const sendResponse = response => response.writeTo(socket);
-  handler(req, sendResponse);
+  handler(req, res);
 };
 
-module.exports = {processRequest};
+const main = () => {
+  const server = new Server(handleConnection);
+  server.on('listening', () => console.warn('server started listening', server.address()));
+  server.listen(4000);
+};
+main();
