@@ -4,7 +4,7 @@ const {serveStaticFile} = require('./lib/serveStaticFile');
 
 const findHandler = req => {
   if (req.method === 'GET' && req.url === '/guestBook.html') return serveGuestBook;
-  if (req.method === 'POST' && req.url === '/guestBook.html') return serveGuestBookPost;
+  if (req.method === 'POST' && req.url === '/saveComment') return serveGuestBookPost;
   return serveStaticFile;
 };
 
