@@ -27,7 +27,6 @@ describe('Get guest book page',()=>{
     .get('/guestBook.html')
     .expect(200)
     .expect('Content-Type','text/html',done)
-    .expect('Content-Length','2499')
     .expect(/Leave a comment/)
   })
 })
@@ -36,8 +35,17 @@ describe('serve guest book post ',()=>{
   it('should save the comment and redirect the page',(done)=>{
     request(app.serve.bind(app))
     .post('/saveComment')
-    .send('name=John')
+    .send('name=John&msg=hey dude')
     .expect(303)
     .expect('Location', '/guestBook.html',done)
+  })
+})
+
+describe('PUT /url',()=>{
+  it('respond 400 "Method not allowed" to this request method',(done)=>{
+    request(app.serve.bind(app))
+    .put('/url')
+    .expect(400)
+    .expect('Method Not Allowed',done)
   })
 })
